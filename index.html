@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ปฏิทินจองวัน</title>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calendar">
+    <h1>ปฏิทินจองวัน</h1>
+
+    <!-- Google Sign-In Button -->
+    <div class="g-signin2" data-onsuccess="onSignIn" data-clientid="137735617913-4gfuei4sbjf8ge8s2eceu8g3r343akjq.apps.googleusercontent.com"></div>
+
+    <!-- Dropdown for Month and Year -->
+    <div>
+      <select id="monthSelect">
+        <option value="0">มกราคม</option>
+        <option value="1">กุมภาพันธ์</option>
+        <option value="2">มีนาคม</option>
+        <option value="3">เมษายน</option>
+        <option value="4">พฤษภาคม</option>
+        <option value="5">มิถุนายน</option>
+        <option value="6">กรกฎาคม</option>
+        <option value="7">สิงหาคม</option>
+        <option value="8">กันยายน</option>
+        <option value="9">ตุลาคม</option>
+        <option value="10">พฤศจิกายน</option>
+        <option value="11">ธันวาคม</option>
+      </select>
+
+      <select id="yearSelect">
+        <option value="2025">2025</option>
+        <option value="2026">2026</option>
+        <option value="2027">2027</option>
+        <option value="2028">2028</option>
+        <option value="2029">2029</option>
+      </select>
+    </div>
+
+    <div id="calendar"></div>
+    <button id="bookBtn" disabled>จองวัน</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
